@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% include ../../includes/header.ejs %>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/prove01.css"/>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h1>
+          <%= title %>
+        </h1>
+      </div>
+    </div>
+
+    
+    <div class = "create-form">
+        <h2>Create a User</h2>
+        <form action = "/users" method ="POST">
+            <input type="text" name="username"/>
+            <button> Add User</button>
+        </form>
+    </div>
+
+    <div class="users">
+        <h2> Current Users</h2>
+        <% usernames.forEach(function(user) { %>
+            <h3><%- user.name %></h3>
+        <% });%>
+    </div>
+
+</body>
+
+</html>

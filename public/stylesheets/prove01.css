@@ -1,0 +1,27 @@
+h1 {
+    font-size: 50px;
+}
+
+.create-form{
+    width:100%;
+}
+
+.create-form h2{
+    text-align: center;
+    font-weight:bold;
+}
+
+.create-form form{
+    text-align: center;
+}
+
+.users{
+    display: inline-block;
+    margin-top: 20px;
+    width:100%;
+    text-align: center;
+}
+
+.users h2{
+    font-weight: bolder;
+}
